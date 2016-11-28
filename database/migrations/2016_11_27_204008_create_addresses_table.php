@@ -15,12 +15,18 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('number');
+            $table->string('street');
+            $table->string('zipCode');
             $table->timestamps();
+            $table->foreign('towns_id')->references('id')->on('towns');
+            $table->foreign('provinces_id')->references('id')->on('provinces');
+
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations.la
      *
      * @return void
      */

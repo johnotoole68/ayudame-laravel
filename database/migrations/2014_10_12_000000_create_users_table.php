@@ -19,10 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('surname');
             $table->string('email')->unique();
             $table->string('password');
-            //$table->rememberToken();
+            $table->rememberToken();
             $table->timestamps();
-            $table->timestamps();
-
+            $table->foreign('profiles_id')->references('id')->on('profiles');
+            $table->foreign('addresses_id')->references('id')->on('addresses');
 
         });
     }

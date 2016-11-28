@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - db2_ayudame@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="db2_ayudame">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="db_ayudame"/>
+    <schema id="3" name="dh"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="peliculas_clase_1"/>
+    <schema id="7" name="peliculas_clase_2"/>
+    <schema id="8" name="peliculas_clase_3"/>
+    <schema id="9" name="peliculas_clase_4"/>
+    <schema id="10" name="performance_schema"/>
+    <schema id="11" name="phpmyadmin"/>
+    <schema id="12" name="test"/>
+    <schema id="13" name="vamosalrio_db"/>
+    <table id="14" parent="1" name="migrations"/>
+    <table id="15" parent="1" name="users"/>
+    <column id="16" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="17" parent="14" name="migration">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="18" parent="14" name="batch">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="19" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="20" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="21" parent="15" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="15" name="surname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="15" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="15" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="25" parent="15" name="remember_token">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="26" parent="15" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="27" parent="15" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <key id="28" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
