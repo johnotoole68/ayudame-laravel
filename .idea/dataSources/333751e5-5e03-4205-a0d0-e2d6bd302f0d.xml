@@ -17,55 +17,20 @@
     <schema id="12" name="test"/>
     <schema id="13" name="vamosalrio_db"/>
     <table id="14" parent="1" name="migrations"/>
-    <table id="15" parent="1" name="users"/>
-    <column id="16" parent="14" name="id">
+    <column id="15" parent="14" name="id">
       <mandatory>1</mandatory>
       <data-type>int(10) unsigned|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="17" parent="14" name="migration">
+    <column id="16" parent="14" name="migration">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="18" parent="14" name="batch">
+    <column id="17" parent="14" name="batch">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <key id="19" parent="14" name="PRIMARY">
-      <columns>id</columns>
-      <primary>1</primary>
-    </key>
-    <column id="20" parent="15" name="id">
-      <mandatory>1</mandatory>
-      <data-type>int(10) unsigned|0</data-type>
-      <sequence-identity>1</sequence-identity>
-    </column>
-    <column id="21" parent="15" name="name">
-      <mandatory>1</mandatory>
-      <data-type>varchar(255)|0</data-type>
-    </column>
-    <column id="22" parent="15" name="surname">
-      <mandatory>1</mandatory>
-      <data-type>varchar(255)|0</data-type>
-    </column>
-    <column id="23" parent="15" name="email">
-      <mandatory>1</mandatory>
-      <data-type>varchar(255)|0</data-type>
-    </column>
-    <column id="24" parent="15" name="password">
-      <mandatory>1</mandatory>
-      <data-type>varchar(255)|0</data-type>
-    </column>
-    <column id="25" parent="15" name="remember_token">
-      <data-type>varchar(100)|0</data-type>
-    </column>
-    <column id="26" parent="15" name="created_at">
-      <data-type>timestamp|0</data-type>
-    </column>
-    <column id="27" parent="15" name="updated_at">
-      <data-type>timestamp|0</data-type>
-    </column>
-    <key id="28" parent="15" name="PRIMARY">
+    <key id="18" parent="14" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
