@@ -49,7 +49,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+				<a class="navbar-brand" href="#"><img src="img/logo.jpg" data-active-url="img/logo-active.jpg" alt=""></a>
 			</div>
 			<!-- navbar colapsada, con menu -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -71,7 +71,7 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h3 class="light white">ayuda.me</h3>
+							<h3 class="white" style="backgroun color: black">ayuda.me</h3>
 							<h1 class="white typed">Siempre tenés a alguien para recomendar.</h1>
 							<span class="typed-cursor">|</span>
 						</div>
@@ -169,7 +169,7 @@
 				<div class="col-md-4">
 					<div class="service">
 						<div class="icon-holder">
-							<img src="img/icons/heart-blue.png" alt="" class="icon">
+							<img src="img/icons/menu-uno.png" alt="" class="icon">
 						</div>
 						<h4 class="heading">¿Qué es ayuda.me?</h4>
 						<p class="description">Es una red social en la cual vas a conseguir una solución a una necesidad de tu casa, trabajo u otro y recomendar a quién te ayudó con la misma.</p>
@@ -178,7 +178,7 @@
 				<div class="col-md-4">
 					<div class="service">
 						<div class="icon-holder">
-							<img src="img/icons/guru-blue.png" alt="" class="icon">
+							<img src="img/icons/menu-dos.png" alt="" class="icon">
 						</div>
 						<h4 class="heading">¿Cómo funciona?</h4>
 						<p class="description">Buscá a quienes hayan tenido una necesidad similar a la tuya y a quienes recomiendan para ayudarte, te contactas y listo!.</p>
@@ -187,7 +187,7 @@
 				<div class="col-md-4">
 					<div class="service">
 						<div class="icon-holder">
-							<img src="img/icons/weight-blue.png" alt="" class="icon">
+							<img src="img/icons/menu-tres.png" alt="" class="icon">
 						</div>
 						<h4 class="heading">¿Cómo pagó?</h4>
 						<p class="description">ayuda.me no es una plataforma de compra-venta de servicios, solo contactamos a los trabajadores con la necesidad.</p>
