@@ -5,5 +5,7 @@
 @extends('layouts.navbar')
 @extends('layouts.posts')
 @extends('layouts.login')
+@extends('layouts.register')
 @extends('layouts.scripts')
 @extends('layouts.definir')
+@extends('layouts.oficios')

@@ -18,7 +18,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#faqs">FAQS</a></li>
         <li><a href="#novedades">Novedades</a></li>
-        <li><a href="#pricing">Registrarse</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modal2" >Registrarse</a></li>
         <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Ingresar</a></li>
       </ul>
     </div>
