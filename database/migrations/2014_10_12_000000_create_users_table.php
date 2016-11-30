@@ -21,6 +21,12 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            //$table->integer('user_profiles_id')->unsigned();
+            //$table->integer('addresses_id')->unsigned();
+
+        });
+
+        Schema::table('users', function($table) {
             $table->foreign('user_profiles_id')->references('id')->on('user_profiles');
             $table->foreign('addresses_id')->references('id')->on('addresses');
 

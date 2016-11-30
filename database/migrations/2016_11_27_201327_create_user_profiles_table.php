@@ -17,6 +17,11 @@ class CreateUserProfilesTable extends Migration
             $table->increments('id');
             $table->string('profileDescription');
             $table->timestamps();
+            $table->interger('user_id')->unsigned();
+
+        });
+
+        Schema::table('user_profiles', function($table) {
             $table->foreign('user_id')->references('id')->on('users');
 
         });

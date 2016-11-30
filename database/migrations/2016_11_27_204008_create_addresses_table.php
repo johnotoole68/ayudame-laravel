@@ -19,9 +19,14 @@ class CreateAddressesTable extends Migration
             $table->string('street');
             $table->string('zipCode');
             $table->timestamps();
+            $table->integer('towns_id')->unsigned();
+            $table->integer('provinces_id')->unsigned();
+
+        });
+
+        Schema::table('addresses', function ($table) {
             $table->foreign('towns_id')->references('id')->on('towns');
             $table->foreign('provinces_id')->references('id')->on('provinces');
-
         });
     }
 

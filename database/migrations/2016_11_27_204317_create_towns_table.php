@@ -16,8 +16,12 @@ class CreateTownsTable extends Migration
         Schema::create('towns', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->foreign('provinces_id')->references('id')->on('provinces');
             $table->timestamps();
+            $table->integer('provinces_id')->unsigned;
+        });
+
+        Schema::table('towns', function($table) {
+            $table->foreign('provinces_id')->references('id')->on('provinces');
         });
     }
 
