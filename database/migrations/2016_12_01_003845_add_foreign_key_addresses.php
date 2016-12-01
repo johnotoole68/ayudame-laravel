@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTownsTable extends Migration
+class AddForeignKeyAddresses extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,10 @@ class CreateTownsTable extends Migration
      */
     public function up()
     {
-        Schema::create('towns', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-            $table->integer('provinces_id')->unsigned;
-        });
-
-          /* Schema::table('towns', function($table) {
+        Schema::table('addresses', function (Blueprint $table) {
+            $table->foreign('towns_id')->references('id')->on('towns');
             $table->foreign('provinces_id')->references('id')->on('provinces');
-        }); */
+        });
     }
 
     /**
@@ -32,6 +26,9 @@ class CreateTownsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('towns');
+        Schema::table('addresses', function (Blueprint $table) {
+            $table->dropForeign('addresses_towns_id_foreign');
+            $table->dropForeign('addresses_provinces_id_foreign');
+        });
     }
 }

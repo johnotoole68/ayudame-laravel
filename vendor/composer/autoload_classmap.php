@@ -6,6 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddForeignKey' => $baseDir . '/database/migrations/2016_11_30_232353_add_foreign_key.php',
+    'AddForeignKeyAddresses' => $baseDir . '/database/migrations/2016_12_01_003845_add_foreign_key_addresses.php',
+    'AddForeignKeyProvinces' => $baseDir . '/database/migrations/2016_12_01_005142_add_foreign_key_provinces.php',
+    'AddForeignKeyTowns' => $baseDir . '/database/migrations/2016_12_01_004201_add_foreign_key_towns.php',
+    'AddForeignKeyUserProfiles' => $baseDir . '/database/migrations/2016_12_01_001254_add_foreign_key_user_profiles.php',
+    'AddForeignKeyUsers' => $baseDir . '/database/migrations/2016_11_30_232931_add_foreign_key_users.php',
     'CreateAddressesTable' => $baseDir . '/database/migrations/2016_11_27_204008_create_addresses_table.php',
     'CreateCountriesTable' => $baseDir . '/database/migrations/2016_11_27_204351_create_countries_table.php',
     'CreateJobsTable' => $baseDir . '/database/migrations/2016_11_27_201817_create_jobs_table.php',
@@ -86,7 +92,6 @@ return array(
     'Hamcrest\\Type\\IsString' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
     'Hamcrest\\Util' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
     'Hamcrest\\Xml\\HasXPath' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
-    'MigrateAddresses' => $baseDir . '/database/migrations/2016_11_28_000922_migrate_addresses.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',

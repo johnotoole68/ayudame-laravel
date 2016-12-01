@@ -13,7 +13,7 @@ class CreateAddressesTable extends Migration
      */
     public function up()
     {
-        Schema::create('addresses', function (Blueprint $table) {
+        /* Schema::create('addresses', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('number');
             $table->string('street');
@@ -22,9 +22,9 @@ class CreateAddressesTable extends Migration
             $table->integer('towns_id')->unsigned();
             $table->integer('provinces_id')->unsigned();
 
-        });
+        }); */
 
-        Schema::table('addresses', function ($table) {
+         Schema::table('addresses', function ($table) {
             $table->foreign('towns_id')->references('id')->on('towns');
             $table->foreign('provinces_id')->references('id')->on('provinces');
         });
