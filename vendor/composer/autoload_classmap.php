@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddAgainForeignKeyTowns' => $baseDir . '/database/migrations/2016_12_04_005613_addAgain_foreign_key_towns.php',
     'AddForeignKey' => $baseDir . '/database/migrations/2016_11_30_232353_add_foreign_key.php',
     'AddForeignKeyAddresses' => $baseDir . '/database/migrations/2016_12_01_003845_add_foreign_key_addresses.php',
     'AddForeignKeyProvinces' => $baseDir . '/database/migrations/2016_12_01_005142_add_foreign_key_provinces.php',

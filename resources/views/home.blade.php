@@ -29,6 +29,7 @@
 			</div>
 		</div>
 	</header>
+
 	<section>
 		<div class="cut cut-top"></div>
 		<div class="container">
@@ -75,6 +76,7 @@
 						</div>
 					</div>
 				</div>
+
 				<!--aca terminan el "¿Qué puedo encontrar?"-->
 				<div class="col-md-4">
 					<div class="intro-table intro-table-hover">
