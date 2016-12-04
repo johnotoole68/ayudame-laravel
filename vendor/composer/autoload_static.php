@@ -279,6 +279,8 @@ class ComposerStaticInit686f5e8f999db2844e03f4ea377f3fc0
 
     public static $classMap = array (
         'AddAgainForeignKeyTowns' => __DIR__ . '/../..' . '/database/migrations/2016_12_04_005613_addAgain_foreign_key_towns.php',
+        'AddAge' => __DIR__ . '/../..' . '/database/migrations/2016_12_04_184220_add_age.php',
+        'AddCascadeOnDelete' => __DIR__ . '/../..' . '/database/migrations/2016_12_04_182926_add_cascade_on_delete.php',
         'AddForeignKey' => __DIR__ . '/../..' . '/database/migrations/2016_11_30_232353_add_foreign_key.php',
         'AddForeignKeyAddresses' => __DIR__ . '/../..' . '/database/migrations/2016_12_01_003845_add_foreign_key_addresses.php',
         'AddForeignKeyProvinces' => __DIR__ . '/../..' . '/database/migrations/2016_12_01_005142_add_foreign_key_provinces.php',

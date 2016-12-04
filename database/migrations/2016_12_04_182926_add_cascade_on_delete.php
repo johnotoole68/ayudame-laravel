@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddAgainForeignKeyTowns extends Migration
+class AddCascadeOnDelete extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class AddAgainForeignKeyTowns extends Migration
      */
     public function up()
     {
-        Schema::table('towns', function (Blueprint $table) {
-            //$table->foreign('provinces_id')->references('id')->on('provinces');
+        Schema::table('users', function (Blueprint $table) {
+            //$table->foreign('user_profiles_id')->references('id')->on('user_profiles')->onDelete('cascade');
         });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -24,8 +25,8 @@ class AddAgainForeignKeyTowns extends Migration
      */
     public function down()
     {
-        Schema::table('towns', function (Blueprint $table) {
-            //$table->dropForeign('towns_provinces_id_foreign');
+        Schema::table('users', function (Blueprint $table) {
+            //$table->dropForeign('users_user_profiles_id_foreign');
         });
     }
 }
