@@ -823,6 +823,8 @@ class ComposerStaticInit686f5e8f999db2844e03f4ea377f3fc0
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
+        'users' => __DIR__ . '/../..' . '/database/seeds/users.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
