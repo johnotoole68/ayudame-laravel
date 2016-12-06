@@ -16,10 +16,16 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
     return [
         'name' => $faker->name,
-        'surname' => $faker->surname,
+        'surname' => $faker->lastName,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
-        'remember_token' => str_random(10),
-        'age' => $faker->age
+        'remember_token' => str_random(20),
+        'age' => rand(17, 90),
+        'user_profiles_id' => rand(1, 20),
+        'addresses_id' => rand(1, 20)
+
+        });
+
     ];
 });
+

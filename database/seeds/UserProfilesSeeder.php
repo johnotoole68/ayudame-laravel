@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class users extends Seeder
+class UserProfilesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,6 @@ class users extends Seeder
      */
     public function run()
     {
-        //TestDummy::times(10)->create('App\User');
-
+        //
     }
 }
