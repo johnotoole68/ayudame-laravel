@@ -6,23 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AddAgainForeignKeyTowns' => $baseDir . '/database/migrations/2016_12_04_005613_addAgain_foreign_key_towns.php',
-    'AddAge' => $baseDir . '/database/migrations/2016_12_04_184220_add_age.php',
-    'AddCascadeOnDelete' => $baseDir . '/database/migrations/2016_12_04_182926_add_cascade_on_delete.php',
-    'AddForeignKey' => $baseDir . '/database/migrations/2016_11_30_232353_add_foreign_key.php',
-    'AddForeignKeyAddresses' => $baseDir . '/database/migrations/2016_12_01_003845_add_foreign_key_addresses.php',
-    'AddForeignKeyProvinces' => $baseDir . '/database/migrations/2016_12_01_005142_add_foreign_key_provinces.php',
-    'AddForeignKeyTowns' => $baseDir . '/database/migrations/2016_12_01_004201_add_foreign_key_towns.php',
-    'AddForeignKeyUserProfiles' => $baseDir . '/database/migrations/2016_12_01_001254_add_foreign_key_user_profiles.php',
-    'AddForeignKeyUsers' => $baseDir . '/database/migrations/2016_11_30_232931_add_foreign_key_users.php',
-    'CreateAddressesTable' => $baseDir . '/database/migrations/2016_11_27_204008_create_addresses_table.php',
-    'CreateCountriesTable' => $baseDir . '/database/migrations/2016_11_27_204351_create_countries_table.php',
-    'CreateJobsTable' => $baseDir . '/database/migrations/2016_11_27_201817_create_jobs_table.php',
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateProvincesTable' => $baseDir . '/database/migrations/2016_11_27_204339_create_provinces_table.php',
-    'CreateTownsTable' => $baseDir . '/database/migrations/2016_11_27_204317_create_towns_table.php',
-    'CreateUserProfilesTable' => $baseDir . '/database/migrations/2016_11_27_201327_create_user_profiles_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'CreatePostsTable' => $baseDir . '/database/migrations/2016_12_03_202126_create_posts_table.php',
+    'CreateUsersTable' => $baseDir . '/database/migrations/2016_12_02_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
@@ -551,6 +536,4 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
-    'UsersTableSeeder' => $baseDir . '/database/seeds/UsersTableSeeder.php',
-    'users' => $baseDir . '/database/seeds/users.php',
 );

@@ -64,6 +64,8 @@ return [
     |
     */
 
+    /* ESTAS LÍNEAS SON LAS QUE HACEN QUE FUNCIONE EL MODELO "User.php" */
+
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
