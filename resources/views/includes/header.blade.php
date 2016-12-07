@@ -9,13 +9,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">ayuda.me</a>
+        <a class="navbar-brand" href="{{ route('home') }}">ayuda.me</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ route('salida') }}">Cerrar Sesión</a></li>
+          @if (Auth::check())
+              <li><a href="{{ route('cuenta') }}">Mi cuenta</a></li>
+              <li><a href="{{ route('salida') }}">Cerrar Sesión</a></li>
+          @endif
+          @if (!Auth::check())
+          <li><a href="{{ route('registrarse') }}">Registrarse</a></li>
+          @endif
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

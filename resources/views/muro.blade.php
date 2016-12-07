@@ -1,18 +1,24 @@
 @extends ('layouts.master')
 
+@section('css_propia')
+<link rel="stylesheet" href="css/muro.css">
+@endsection
+
 @section('contenido')
+<div class="container-fluid">
+  @include('includes.header')
   <section class="row new-post">
-      <div class="col-md-6 col-md-offset-3">
-        <header><h3>Que tenes para contar?</h3></header>
-        @include('includes.mensajes')
-        <form action="{{ route('post.creado')}}" method="POST">
-          <div class="form-group">
-            <textarea class="form-control" name="body" rows="5" cols="40" placeholder="Contanos lo que quieras"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">POST</button>
-          <input type="hidden" name="_token" value="{{ Session::token() }}">
-        </form>
-      </div>
+    <div class="col-md-6 col-md-offset-3">
+      <header><h3>Que tenes para contar?</h3></header>
+      @include('includes.mensajes')
+      <form action="{{ route('post.creado')}}" method="POST">
+        <div class="form-group">
+          <textarea class="form-control" name="body" rows="5" cols="40" placeholder="Contanos lo que quieras"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">POST</button>
+        <input type="hidden" name="_token" value="{{ Session::token() }}">
+      </form>
+    </div>
   </section>
   <section class="row posts">
     <div class="col-md-6 col-md-offset-3">
@@ -26,8 +32,8 @@
           Creado por {{ $post->user->name }} el {{ $post->created_at }}
         </div>
         <div class="interaction">
-          <a href="#">Me gusta</a>
-          <a href="#">No me gusta</a>
+          <a href="#" class="recomendar">Recomiendo</a>
+          <a href="#" class="recomendar">No Recomiendo</a>
           @if(Auth::user() == $post->user)
           <a href="#" class="edicion">Editar</a>
           <a href="{{ route('eliminar.posts', ['post_id' => $post->id]) }}">Eliminar</a>
@@ -64,6 +70,8 @@
   <script>
     var token = '{{ Session::token() }}';
     var url = '{{ route('editar') }}';
+    var urlRecomendaciones = '{{ route('recomendaciones') }}';
   </script>
+</div>
 
 @endsection

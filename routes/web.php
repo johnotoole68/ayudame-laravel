@@ -14,12 +14,17 @@
 
 Route::group(['middleware' => ['web']], function() {
   Route::get('/', function () {
-      return view('welcome');
+      return view('home');
   })->name('home');
 
   Route::post('/registro', [
     'uses' => 'UserController@enviarRegistro',
     'as' => 'registro'
+  ]);
+
+  Route::get('/formulario_de_registro', [
+    'uses' => 'UserController@registrarse',
+    'as' => 'registrarse'
   ]);
 
   Route::post('/ingreso', [
@@ -30,6 +35,21 @@ Route::group(['middleware' => ['web']], function() {
   Route::get('/cerrarSesion', [
     'uses' => 'UserController@cerrarSesion',
     'as' => 'salida'
+  ]);
+
+  Route::get('/cuenta_de_usuario', [
+    'uses' => 'UserController@cuentaDeUsuario',
+    'as' => 'cuenta'
+  ]);
+
+  Route::post('/guardar_usuario', [
+    'uses' => 'UserController@guardarUsuario',
+    'as' => 'guardar.cambios'
+  ]);
+
+  Route::get('/imagen_de_perfil/{nombre_de_archivo}', [
+    'uses' => 'UserController@mostrarImagenDePerfil',
+    'as' => 'imagen_de_perfil'
   ]);
 
   Route::get('/muro', [
@@ -51,8 +71,14 @@ Route::group(['middleware' => ['web']], function() {
     'middleware' => 'auth'
   ]);
 
-  Route::post('/editar', function(\Illuminate\Http\Request $request){
-    return response()->json(['message' => $request['postId']]);
-  })->name('editar');
+  Route::post('/editar', [
+    'uses' => 'PostController@editarPost',
+    'as' => 'editar'
+  ]);
+
+  Route::post('/recomendaciones', [
+    'uses' => 'PostController@hacerRecomendacion',
+    'as' => 'recomendaciones'
+  ]);
 
 });

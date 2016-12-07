@@ -1,0 +1,160 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fondo_completo_registrarse{
+  background: url(../img/happy.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+header{
+  padding: 0px;
+  margin: 0px;
+}
+
+.modelo_home{
+  margin: 25px 10px 10px 10px;
+  text-align: center;
+  color: #B1F1B2;
+}
+
+i{
+  padding: 20px;
+}
+
+.titulo{
+  text-align: center;
+  color: #FFF;
+  padding-bottom: 50px;
+}
+
+.titulo h2{
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.oficios{
+  background-color: #FFF;
+  height: 700px;
+  position: relative;
+  top: 150px;
+}
+
+.footer{
+  background-color: #424D69;
+  height: 100px;
+  position: relative;
+  top: 150px;
+}
+
+.faqs{
+  background-color: #1E757B;
+  height: 400px;
+  position: relative;
+  top: 150px;
+}
+
+form, h3{
+  color: #FFF;
+}
+
+/* .login : se utiliza en los <forms> de login y register */
+
+.login{
+  background-color: rgba(0, 0, 0, 0.50);
+  padding-bottom: 30px;
+}
+
+.contexto_cdu, h4, h2{
+  color: #FFF;
+}
+
+/* */
+
+/* para la página de cuenta de usuario */
+
+.fondo_completo_cdu{
+  background: url(../img/dibujante.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 200px;
+}
+
+/* */
+
+
+.new-post{
+  padding: 16px 0px;
+  border-bottom: 1px solid #ccc
+}
+
+.new-post header,
+.post header{
+  margin-bottom: 20px;
+}
+
+.posts .post{
+  padding-left: 10px;
+  border-left: 3px solid #a21b24;
+  margin-bottom: 30px;
+}
+
+.posts .post .info{
+  color: #aaa;
+  font-style: italic;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  z-index: -100;
+
+  background-size: cover;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px @screen-sm-min) { ... }
+
+.oficios{
+  background-color: #FFF;
+  height: 400px;
+  position: relative;
+  top: 150px;
+}
+
+.footer{
+  background-color: #424D69;
+  height: 100px;
+  position: relative;
+  top: 150px;
+}
+
+.faqs{
+  background-color: #1E757B;
+  height: 400px;
+  position: relative;
+  top: 150px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px @screen-lg-min) { ... }

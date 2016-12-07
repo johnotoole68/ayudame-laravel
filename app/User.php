@@ -12,4 +12,10 @@ class User extends Model implements Authenticatable
   {
     return $this->hasMany('App\Post');
   }
+
+  public function recomendar()
+  {
+    return $this->hasMany('App\Recomendaciones');
+  }
+  
 }
